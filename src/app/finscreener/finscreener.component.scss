@@ -1,0 +1,114 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.finscreener-title{
+    cursor: pointer;
+    float: left;
+    font-family: Roboto;
+    font-weight: 900;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #2f8dcc;
+    margin-bottom: 20px;
+}
+.desk-btn{    
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    color: #2f8dcc;
+}
+.dropdown-select select{
+    border-radius: 18px;
+    height: 25px;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 5px;
+    width: 107px;
+    min-width: 107px;
+    font-size: 12px;
+    font-weight: 700;
+    background-position-x: 85px;
+    background-position-y: 7px;
+    background-size: 11px;
+    color: #000;
+    border: 2px solid #2f8dcc;
+    cursor: pointer;
+    outline-width: 0;
+    -webkit-appearance: auto!important;
+}
+table thead tr th {
+    border-bottom:2px solid #2f8dcc; 
+    font-size: 12px;
+}
+.table th, .table td{
+    padding: 0.1rem;
+    text-align: right;
+    font-size: 12px;
+}
+.table tbody td:first-child{
+    color: #2f8dcc;
+    cursor: pointer;
+}
+.table tbody td:first-child:hover{
+    color: #3d495b;
+}
+a{
+    text-decoration: none;
+    color:#2f8dcc;
+}
+.scroll-bar{
+    max-height: 210px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.lock{
+    width: 18px;
+    height: 14px;
+    border: 3px solid #028BCF;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.lock:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 11px;
+    bottom: 100%;
+    position: absolute;
+    left: 65%;
+    margin-left: -8px;
+    border: 3px solid #028BCF;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: 0;
+    -webkit-transition: .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.lock:after {
+    content: "";
+    display: block;
+    background: #028BCF;
+    width: 3px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3.5px 0 0 -2px;
+    -webkit-transition: .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}

@@ -1,0 +1,44 @@
+<div class="container-fluid mt-4">
+    <div class="col-12">
+        <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-light desk-btn">My Desk</button>
+            <span class="lock ml-3 mt-2"></span>
+        </div>
+    </div>
+    <div class="col-12 mt-4">
+        <div class="wrapper-main w-50 scroll-bar p-3">
+            <div class="w-100 clearfix">
+                <span class="finscreener-title">
+                    <a href="https://www.finscreener.org/screener/best-dividend-stocks/us-markets" target="_blank">
+                        Best Dividend Stocks
+                    </a>
+                </span>
+                <span class="dropdown-select pl-3">
+                    <select id="dropdown" (change)="handleClickOption($event)">
+                        <option *ngFor="let dropDownItem of dropDownLookup; let i=index;" [value]="dropDownItem.value">
+                            {{dropDownItem?.displayName}} 
+                        </option>
+                    </select>
+                </span>
+            </div>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Price</th>
+                        <th>Yield % Ann.</th>
+                        <th>Payout Ratio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of BDSResData;let i=index;">
+                        <td>{{item.ticker}}</td>
+                        <td>{{item.cena | number: '1.0-2'}}</td>
+                        <td>{{item.vynos | number: '1.0-2'}}</td>
+                        <td>{{item.ratio}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
